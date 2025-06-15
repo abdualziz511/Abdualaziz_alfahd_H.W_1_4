@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السيرة الذاتية - عبد العزيز الفهد</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&family=Changa:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <style>
+        :root {
+            /* Primary Colors */
+            --primary-dark: #0d1520;
+            --primary-blue: #1a2333;
+            --primary-light: #263246;
+            
+            /* Accent Colors */
+            --accent-blue: #3498db;
+            --accent-blue-light: #5dade2;
+            --gold-accent: #c09f52;
+            --gold-accent-light: #d6b47c;
+            
+            /* Text Colors */
+            --text-primary: #ffffff;
+            --text-secondary: #e0e0e0;
+            --text-dark: #333333;
+            
+            /* Borders & Shadows */
+            --border-color: #2c3a47;
+            --shadow-color: rgba(0, 0, 0, 0.55);
+            
+            /* Transitions */
+            --smooth-transition: all 0.4s ease-in-out;
+            
+            /* Fonts */
+            --font-arabic: 'Almarai', 'Changa', sans-serif;
+            --font-english: 'Poppins', sans-serif;
+            
+            /* Spacing */
+            --spacing-unit: 1.5rem;
+            --border-radius-sm: 0.5rem;
+            --border-radius-lg: 1.2rem;
+            --border-radius-xl: 2rem;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-arabic);
+            line-height: 1.8;
+            color: var(--text-secondary);
+            background-color: var(--primary-dark);
+            min-height: 100vh;
+            direction: rtl;
+            text-align: right;
+            overflow-x: hidden;
+            transition: background-color 0.5s ease;
+            background-image: 
+                radial-gradient(circle at top right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                radial-gradient(circle at bottom left, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            background-repeat: repeat;
+        }
+        
+        body[dir="ltr"] {
+            direction: ltr;
+            text-align: left;
+            font-family: var(--font-english);
+        }
+        
+        /* Language Toggle Button */
+        .language-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1001;
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-light));
+            border: 1px solid var(--gold-accent);
+            border-radius: var(--border-radius-lg);
+            padding: 10px 15px;
+            color: var(--text-primary);
+            font-family: var(--font-arabic);
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            transition: var(--smooth-transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        body[dir="ltr"] .language-toggle {
+            right: auto;
+            left: 20px;
+            font-family: var(--font-english);
+        }
+        
+        .language-toggle:hover {
+            transform: translateY(-3px);
+            background: linear-gradient(135deg, var(--primary-light), var(--primary-blue));
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+        }
+        
+        .language-toggle i {
+            color: var(--gold-accent);
+            font-size: 1.2rem;
+        }
+        
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 calc(var(--spacing-unit) * 1.5);
+            flex-grow: 1;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0d1520 0%, #1a2333 100%);
+            color: var(--text-primary);
+            padding: calc(var(--spacing-unit) * 6) 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 85vh;
+            flex-direction: column;
+            box-shadow: 0 8px 20px var(--shadow-color);
+            border-bottom-left-radius: var(--border-radius-xl);
+            border-bottom-right-radius: var(--border-radius-xl);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(52, 152, 219, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(192, 159, 82, 0.1) 0%, transparent 40%);
+            z-index: 0;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+        }
+        
+        .hero h1 {
+            font-size: 4.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            color: var(--text-primary);
+            background: linear-gradient(to right, var(--gold-accent), var(--gold-accent-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeInDown 1s ease-out;
+        }
+        
+        body[dir="ltr"] .hero h1 {
+            font-family: var(--font-english);
+        }
+        
+        .hero p {
+            font-size: 1.8rem;
+            color: var(--text-secondary);
+            margin: 0 auto calc(var(--spacing-unit) * 2.5);
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+        
+        body[dir="ltr"] .hero p {
+            font-family: var(--font-english);
+        }
+        
+        .social-icons {
+            margin-top: var(--spacing-unit);
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            animation: fadeIn 1s ease-out 0.6s both;
+        }
+        
+        .social-icons a {
+            color: var(--text-primary);
+            font-size: 2.5rem;
+            transition: var(--smooth-transition);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--primary-light);
+            box-shadow: 0 4px 10px var(--shadow-color);
+            border: 1px solid var(--border-color);
+        }
+        
+        .social-icons a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, var(--accent-blue-light) 0%, transparent 70%);
+            opacity: 0;
+            transform: scale(0);
+            transition: var(--smooth-transition);
+            z-index: -1;
+        }
+        
+        .social-icons a:hover::before {
+            opacity: 1;
+            transform: scale(1);
+        }
+        
+        .social-icons a:hover {
+            transform: translateY(-8px) scale(1.1);
+            box-shadow: 0 8px 20px var(--shadow-color);
+        }
+        
+        /* Section Headings */
+        h2 {
+            font-size: 3.2rem;
+            color: var(--text-primary);
+            text-align: center;
+            margin-bottom: calc(var(--spacing-unit) * 3);
+            position: relative;
+            padding-bottom: 0.8rem;
+            text-shadow: 0 4px 8px var(--shadow-color);
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        body[dir="ltr"] h2 {
+            font-family: var(--font-english);
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            transform: translateX(50%);
+            width: 120px;
+            height: 6px;
+            background: linear-gradient(to left, var(--accent-blue), var(--gold-accent));
+            border-radius: 3px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+        }
+        
+        h3 {
+            font-size: 2rem;
+            color: var(--accent-blue);
+            margin-bottom: var(--spacing-unit);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        body[dir="ltr"] h3 {
+            font-family: var(--font-english);
+        }
+        
+        h3 i {
+            color: var(--gold-accent);
+            font-size: 2.2rem;
+        }
+        
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1.1rem;
+            line-height: 1.9;
+        }
+        
+        body[dir="ltr"] p {
+            font-family: var(--font-english);
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        a {
+            color: var(--accent-blue-light);
+            text-decoration: none;
+            transition: var(--smooth-transition);
+        }
+        
+        a:hover {
+            color: var(--gold-accent-light);
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+        }
+        
+        /* Sections */
+        section {
+            padding: calc(var(--spacing-unit) * 4) 0;
+            border-bottom: 1px solid var(--border-color);
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        
+        section:last-of-type {
+            border-bottom: none;
+        }
+        
+        section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Card Design */
+        .card {
+            background: linear-gradient(135deg, var(--primary-blue), #222e40);
+            padding: calc(var(--spacing-unit) * 2);
+            border-radius: var(--border-radius-lg);
+            box-shadow: 0 6px 15px var(--shadow-color);
+            border: 1px solid var(--border-color);
+            transition: var(--smooth-transition);
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, var(--accent-blue), var(--gold-accent));
+            transition: height 0.3s ease-in-out;
+            z-index: 0;
+        }
+        
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px var(--shadow-color);
+        }
+        
+        .card:hover::before {
+            height: 100%;
+            opacity: 0.1;
+        }
+        
+        .card-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: calc(var(--spacing-unit) * 2.5);
+            align-items: start;
+        }
+        
+        .personal-info li {
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            font-size: 1.15rem;
+            line-height: 1.6;
+        }
+        
+        .personal-info li i {
+            color: var(--accent-blue);
+            font-size: 1.5rem;
+            min-width: 30px;
+            text-align: center;
+        }
+        
+        .personal-info li strong {
+            color: var(--gold-accent);
+        }
+        
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: calc(var(--spacing-unit) * 1.5);
+        }
+        
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+        
+        .skill-item {
+            background: linear-gradient(135deg, var(--primary-light), #2a3647);
+            color: var(--text-primary);
+            padding: 0.8rem 1.4rem;
+            border-radius: var(--border-radius-sm);
+            font-size: 1rem;
+            font-weight: bold;
+            transition: var(--smooth-transition);
+            border: 1px solid var(--accent-blue);
+            cursor: pointer;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .skill-item:hover {
+            transform: translateY(-5px) scale(1.05);
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-light));
+            box-shadow: 0 6px 15px var(--shadow-color);
+        }
+        
+        .skill-item i {
+            font-size: 1.2rem;
+        }
+        
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: calc(var(--spacing-unit) * 2);
+        }
+        
+        .project-tech-icons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-top: 1rem;
+            justify-content: flex-start;
+        }
+        
+        .project-tech-icons .icon-label {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            background: linear-gradient(135deg, var(--primary-light), #2a3647);
+            color: var(--text-secondary);
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius-sm);
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+        
+        .project-tech-icons .icon-label:hover {
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-light));
+            color: var(--text-primary);
+        }
+        
+        .project-tech-icons .icon-label i {
+            font-size: 1.1rem;
+            color: var(--accent-blue-light);
+        }
+        
+        .project-tech-icons .icon-label:hover i {
+            color: var(--text-primary);
+        }
+        
+        /* Courses Section */
+        .courses-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: calc(var(--spacing-unit) * 1.5);
+        }
+        
+        .course-item {
+            background: linear-gradient(135deg, var(--primary-blue), #222e40);
+            padding: calc(var(--spacing-unit) * 1.5);
+            border-radius: var(--border-radius-lg);
+            box-shadow: 0 6px 15px var(--shadow-color);
+            border: 1px solid var(--border-color);
+            transition: var(--smooth-transition);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-unit);
+        }
+        
+        .course-item:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 25px var(--shadow-color);
+            background: linear-gradient(135deg, var(--primary-light), #2a3647);
+        }
+        
+        .course-item i {
+            font-size: 3rem;
+            color: var(--gold-accent);
+            flex-shrink: 0;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+        
+        .course-item p {
+            font-size: 1.15rem;
+            margin-bottom: 0;
+            font-weight: bold;
+            color: var(--accent-blue-light);
+        }
+        
+        /* Interests Section */
+        .interests-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: calc(var(--spacing-unit) * 1.5);
+        }
+        
+        .interest-item {
+            background: linear-gradient(135deg, var(--primary-blue), #222e40);
+            padding: calc(var(--spacing-unit) * 1.5);
+            border-radius: var(--border-radius-lg);
+            box-shadow: 0 6px 15px var(--shadow-color);
+            border: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: var(--smooth-transition);
+            cursor: pointer;
+        }
+        
+        .interest-item:hover {
+            background: linear-gradient(135deg, var(--primary-light), #2a3647);
+            transform: scale(1.03) translateY(-5px);
+            box-shadow: 0 10px 25px var(--shadow-color);
+        }
+        
+        .interest-item i {
+            font-size: 4rem;
+            color: var(--accent-blue);
+            margin-bottom: 1rem;
+            transition: var(--smooth-transition);
+            text-shadow: 0 3px 8px rgba(0,0,0,0.4);
+        }
+        
+        .interest-item:hover i {
+            color: var(--gold-accent-light);
+            transform: rotate(5deg);
+        }
+        
+        .interest-item p {
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+            transition: var(--smooth-transition);
+        }
+        
+        .interest-item:hover p {
+            color: var(--text-primary);
+        }
+        
+        /* Personal Skills Section */
+        .personal-skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: calc(var(--spacing-unit) * 1.5);
+        }
+        
+        .personal-skill-item {
+            background: linear-gradient(135deg, var(--primary-blue), #222e40);
+            padding: calc(var(--spacing-unit) * 1.5);
+            border-radius: var(--border-radius-lg);
+            box-shadow: 0 6px 15px var(--shadow-color);
+            border: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: var(--smooth-transition);
+        }
+        
+        .personal-skill-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px var(--shadow-color);
+            background: linear-gradient(135deg, var(--primary-light), #2a3647);
+        }
+        
+        .personal-skill-item i {
+            font-size: 3.5rem;
+            color: var(--accent-blue);
+            margin-bottom: 1rem;
+            transition: var(--smooth-transition);
+        }
+        
+        .personal-skill-item:hover i {
+            color: var(--gold-accent-light);
+        }
+        
+        .personal-skill-item p {
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+            transition: var(--smooth-transition);
+        }
+        
+        .personal-skill-item:hover p {
+            color: var(--text-primary);
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, var(--primary-light), #1e2a3a);
+            color: var(--text-secondary);
+            text-align: center;
+            padding: var(--spacing-unit);
+            margin-top: calc(var(--spacing-unit) * 3);
+            border-top-left-radius: var(--border-radius-xl);
+            border-top-right-radius: var(--border-radius-xl);
+            box-shadow: 0 -5px 15px var(--shadow-color);
+            font-size: 0.95rem;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        footer p {
+            margin: 0.5rem 0;
+        }
+        
+        /* Back to Top Button */
+        #backToTopBtn {
+            display: none;
+            position: fixed;
+            bottom: calc(var(--spacing-unit) * 1.5);
+            right: calc(var(--spacing-unit) * 1.5);
+            background: linear-gradient(135deg, var(--gold-accent), var(--gold-accent-light));
+            color: var(--text-primary);
+            border: none;
+            border-radius: var(--border-radius-lg);
+            width: auto;
+            min-width: 160px;
+            height: 60px;
+            padding: 0 1.8rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+            box-shadow: 0 6px 15px var(--shadow-color);
+            transition: var(--smooth-transition);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        body[dir="ltr"] #backToTopBtn {
+            right: auto;
+            left: calc(var(--spacing-unit) * 1.5);
+        }
+        
+        #backToTopBtn i {
+            font-size: 2.2rem;
+            color: var(--text-primary);
+            transition: var(--smooth-transition);
+        }
+        
+        #backToTopBtn .btn-text {
+            font-weight: 600;
+            color: var(--text-primary);
+            transition: var(--smooth-transition);
+            text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+        
+        body[dir="ltr"] #backToTopBtn .btn-text {
+            font-family: var(--font-english);
+        }
+        
+        #backToTopBtn:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 25px var(--shadow-color);
+            background: linear-gradient(135deg, var(--gold-accent-light), var(--gold-accent));
+        }
+        
+        #backToTopBtn:hover i {
+            transform: translateY(-2px);
+        }
+        
+        /* Profile Image */
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 1.5rem;
+            border: 4px solid var(--gold-accent);
+            box-shadow: 0 6px 15px var(--shadow-color);
+            position: relative;
+        }
+        
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .profile-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(192, 159, 82, 0.2), rgba(52, 152, 219, 0.2));
+            z-index: 1;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Notification */
+        .lang-notification {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 12px 24px;
+            border-radius: var(--border-radius-lg);
+            font-size: 1.1rem;
+            z-index: 10000;
+            display: none;
+            animation: fadeIn 0.5s, fadeOut 0.5s 1.5s forwards;
+        }
+        
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            :root {
+                --spacing-unit: 1.2rem;
+                --border-radius-lg: 0.8rem;
+                --border-radius-xl: 1.5rem;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .hero {
+                min-height: 70vh;
+                padding: calc(var(--spacing-unit) * 4) 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .hero p {
+                font-size: 1.3rem;
+            }
+            
+            h2 {
+                font-size: 2.5rem;
+                margin-bottom: calc(var(--spacing-unit) * 2);
+            }
+            
+            h2::after {
+                width: 80px;
+                height: 4px;
+            }
+            
+            h3 {
+                font-size: 1.6rem;
+            }
+            
+            h3 i {
+                font-size: 1.8rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+            
+            section {
+                padding: calc(var(--spacing-unit) * 2.5) 0;
+            }
+            
+            .about-grid, .skills-grid, .projects-grid, .courses-list, .interests-grid, .personal-skills-grid {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-unit);
+            }
+            
+            .personal-info li {
+                font-size: 1rem;
+                flex-wrap: wrap;
+            }
+            
+            .personal-info li strong {
+                min-width: 100px;
+                display: inline-block;
+            }
+            
+            .personal-info li a {
+                word-break: break-all;
+                font-size: 0.9rem;
+            }
+            
+            .personal-info li i {
+                font-size: 1.3rem;
+                min-width: 25px;
+            }
+            
+            .skill-item {
+                font-size: 0.9rem;
+                padding: 0.5rem 1rem;
+            }
+            
+            .course-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.8rem;
+            }
+            
+            .course-item i {
+                font-size: 2.5rem;
+                margin-bottom: 0.5rem;
+            }
+            
+            .course-item p {
+                font-size: 1rem;
+            }
+            
+            .interest-item i, .personal-skill-item i {
+                font-size: 3rem;
+                margin-bottom: 0.8rem;
+            }
+            
+            .interest-item p, .personal-skill-item p {
+                font-size: 1.05rem;
+            }
+            
+            #backToTopBtn {
+                min-width: 120px;
+                height: 50px;
+                padding: 0 1.2rem;
+                font-size: 1rem;
+                bottom: 1rem;
+                right: 1rem;
+            }
+            
+            body[dir="ltr"] #backToTopBtn {
+                left: 1rem;
+                right: auto;
+            }
+            
+            #backToTopBtn i {
+                font-size: 1.8rem;
+            }
+            
+            #backToTopBtn .btn-text {
+                font-size: 1rem;
+            }
+            
+            .language-toggle {
+                top: 15px;
+                right: 15px;
+                padding: 6px 12px;
+                font-size: 0.9rem;
+            }
+            
+            body[dir="ltr"] .language-toggle {
+                left: 15px;
+                right: auto;
+            }
+            
+            .profile-image {
+                width: 150px;
+                height: 150px;
+                margin-bottom: 1rem;
+            }
+        }
+        
+        @media (min-width: 769px) and (max-width: 1200px) {
+            :root {
+                --spacing-unit: 1.3rem;
+            }
+            
+            .hero h1 {
+                font-size: 3.8rem;
+            }
+            
+            .hero p {
+                font-size: 1.5rem;
+            }
+            
+            h2 {
+                font-size: 2.8rem;
+            }
+            
+            h3 {
+                font-size: 1.8rem;
+            }
+            
+            h3 i {
+                font-size: 2rem;
+            }
+            
+            .about-grid {
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            }
+            
+            .skills-grid, .projects-grid, .courses-list, .interests-grid, .personal-skills-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
+        }
+        
+        /* تحسينات للهواتف الصغيرة جداً */
+        @media (max-width: 480px) {
+            .social-icons {
+                gap: 0.8rem;
+            }
+            
+            .social-icons a {
+                width: 45px;
+                height: 45px;
+                font-size: 1.8rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .personal-info li {
+                font-size: 0.9rem;
+            }
+            
+            .personal-info li strong {
+                min-width: 85px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Toggle Button -->
+    <button class="language-toggle" id="languageToggle">
+        <i class="fas fa-globe"></i>
+        <span id="languageText">English</span>
+    </button>
+    
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content">
+            <h1 id="heroTitle">عبد العزيز مطيع الفهد</h1>
+            <p id="heroSubtitle">طالب طموح في تخصص تقنية المعلومات، أمتلك شغفًا عميقًا في مجالات الأمن السيبراني، تحليل البيانات، ونظرية الحوسبة. أسعى لتطبيق مهاراتي الأكاديمية والعملية في بيئة عمل احترافية، والمساهمة في تطوير حلول تقنية فعالة وآمنة تترك أثرًا إيجابيًا.</p>
+            <div class="social-icons">
+                <a href="https://github.com/abdualziz511" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                <a href="https://t.me/Aziz_11_13" target="_blank" aria-label="Telegram Profile"><i class="fab fa-telegram"></i></a>
+                <a href="https://www.facebook.com/share/16R6Nt5vK5/" target="_blank" aria-label="Facebook Profile"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/967775659026" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:alfhdbdalzyz417@gmail.com" aria-label="Send Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="container">
+        <!-- About Section -->
+        <section id="about">
+            <h2><i class="fas fa-address-card"></i> <span id="aboutTitle">عني</span></h2>
+            <div class="about-grid">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="profile-image">
+                            <img src="https://avatars.githubusercontent.com/u/182016882?v=4&size=64" alt="Abdulaziz Al-Fahd" id="profileImg">
+                        </div>
+                        <h3><i class="fas fa-user-circle"></i> <span id="personalInfoTitle">معلومات شخصية</span></h3>
+                        <ul class="personal-info">
+                            <li><i class="fas fa-id-card"></i> <strong id="fullNameLabel">الاسم الكامل:</strong> <span id="fullNameValue">عبد العزيز مطيع ناجي مصلح الفهد</span></li>
+                            <li><i class="fas fa-flag"></i> <strong id="nationalityLabel">الجنسية:</strong> <span id="nationalityValue">يمني</span></li>
+                            <li><i class="fas fa-map-marker-alt"></i> <strong id="locationLabel">محل الإقامة:</strong> <span id="locationValue">إب، اليمن</span></li>
+                            <li><i class="fas fa-phone-alt"></i> <strong id="phoneLabel">رقم الهاتف:</strong> <a href="tel:+967775659026" id="phoneValue">+967 775 659 026</a></li>
+                            <li><i class="fas fa-at"></i> <strong id="emailLabel">البريد الإلكتروني:</strong> <a href="mailto:alfhdbdalzyz417@gmail.com" id="emailValue">alfhdbdalzyz417@gmail.com</a></li>
+                            <li><i class="fab fa-telegram"></i> <strong id="telegramLabel">التلجرام:</strong> <a href="https://t.me/Aziz_11_13" target="_blank" id="telegramValue">@Aziz_11_13</a></li>
+                            <li><i class="fab fa-facebook"></i> <strong id="facebookLabel">الفيسبوك:</strong> <a href="https://www.facebook.com/share/16R6Nt5vK5/" target="_blank" id="facebookValue">عبد العزيز الفهد</a></li>
+                            <li><i class="fab fa-whatsapp"></i> <strong id="whatsappLabel">الواتساب:</strong> <a href="https://wa.me/967775659026" target="_blank" id="whatsappValue">+967 775 659 026</a></li>
+                            <li><i class="fas fa-language"></i> <strong id="languagesLabel">اللغة:</strong> <span id="languagesValue">العربية (اللغة الأم)، الإنجليزية (جيد جداً)</span></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <h3><i class="fas fa-bullseye"></i> <span id="objectiveTitle">الهدف المهني</span></h3>
+                        <p id="objectiveText">طالب في تخصص تقنية المعلومات أسعى لتطبيق مهاراتي الأكاديمية والعملية في بيئة عمل احترافية، أمتلك شغفًا في مجالات أمن المعلومات، تحليل البيانات، ونظرية الحوسبة، وأسعى للمساهمة في تطوير حلول تقنية فعالة وآمنة.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Education Section -->
+        <section id="education">
+            <h2><i class="fas fa-graduation-cap"></i> <span id="educationTitle">المؤهل العلمي</span></h2>
+            
+            <div class="card">
+                <div class="card-content">
+                    <h3><i class="fas fa-laptop-code"></i> <span id="degreeTitle">بكالوريوس تقنية معلومات</span></h3>
+                    <p><strong id="universityLabel">الجامعة:</strong> <span id="universityValue">جامعة إب – إب</span></p>
+                    <span><strong id="graduationLabel">متوقع التخرج:</strong> <span id="graduationValue">2025</span></span>
+                    <p class="mt-1" id="educationDescription">
+                        أركز خلال دراستي على مفاهيم أساسية في علوم الحاسوب وهندسة البرمجيات، مع اهتمام خاص بتطبيقاتها العملية وحلولها المبتكرة في مجال الأمن السيبراني وتحليل البيانات.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- إضافة الدبلوم المتوسط في اللغة الإنجليزية -->
+            <div class="card" style="margin-top: 1.5rem;">
+                <div class="card-content">
+                    <h3><i class="fas fa-language"></i> <span id="diplomaTitle">دبلوم متوسط في اللغة الإنجليزية</span></h3>
+                    <p><strong id="instituteLabel">المعهد:</strong> <span id="instituteValue">معهد البرد العربي – إب</span></p>
+                    <p id="diplomaDescription">
+                        حاصل على دبلوم متوسط في اللغة الإنجليزية يثبت كفاءتي في اللغة ومهارات التواصل بالإنجليزية في المجالات الأكاديمية والمهنية.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2><i class="fas fa-tools"></i> <span id="skillsTitle">المهارات التقنية</span></h2>
+            <div class="skills-grid">
+                <div class="card">
+                    <div class="card-content">
+                        <h3><i class="fas fa-code"></i> <span id="programmingTitle">لغات البرمجة</span></h3>
+                        <div class="skill-list">
+                            <span class="skill-item"><i class="fab fa-microsoft"></i> C#</span>
+                            <span class="skill-item"><i class="fab fa-php"></i> PHP</span>
+                            <span class="skill-item"><i class="fab fa-html5"></i> HTML</span>
+                            <span class="skill-item"><i class="fab fa-css3-alt"></i> CSS</span>
+                            <span class="skill-item"><i class="fab fa-js"></i> JavaScript</span>
+                            <span class="skill-item"><i class="fab fa-python"></i> Python</span>
+                            <!-- إضافة Java و Assembly -->
+                            <span class="skill-item"><i class="fab fa-java"></i> Java</span>
+                            <span class="skill-item"><i class="fas fa-microchip"></i> Assembly</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <h3><i class="fas fa-database"></i> <span id="databaseTitle">قواعد البيانات</span></h3>
+                        <div class="skill-list">
+                            <span class="skill-item"><i class="fas fa-database"></i> MySQL</span>
+                            <span class="skill-item"><i class="fas fa-database"></i> SQLite</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <h3><i class="fas fa-chart-line"></i> <span id="analysisTitle">أدوات التحليل</span></h3>
+                        <div class="skill-list">
+                            <span class="skill-item"><i class="fas fa-table"></i> pandas</span>
+                            <span class="skill-item"><i class="fas fa-calculator"></i> NumPy</span>
+                            <span class="skill-item"><i class="fas fa-chart-bar"></i> matplotlib</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <h3><i class="fas fa-laptop-code"></i> <span id="toolsTitle">أدوات التطوير</span></h3>
+                        <div class="skill-list">
+                            <span class="skill-item"><i class="fas fa-code"></i> Visual Studio</span>
+                            <span class="skill-item"><i class="fas fa-server"></i> XAMPP</span>
+                            <span class="skill-item"><i class="fab fa-git-alt"></i> Git</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <h3><i class="fas fa-brain"></i> <span id="conceptsTitle">مفاهيم</span></h3>
+                        <div class="skill-list">
+                            <span class="skill-item"><i class="fas fa-shield-alt"></i> <span id="cybersecurityLabel">الأمن السيبراني</span></span>
+                            <span class="skill-item"><i class="fas fa-project-diagram"></i> <span id="machinesLabel">نظرية الآلات</span></span>
+                            <span class="skill-item"><i class="fas fa-chart-pie"></i> <span id="dataAnalysisLabel">تحليل البيانات</span></span>
+                            <span class="skill-item"><i class="fas fa-cogs"></i> <span id="algorithmsLabel">الخوارزميات</span></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- إضافة قسم الذكاء الاصطناعي -->
+                <div class="card">
+                    <div class="card-content">
+                        <h3><i class="fas fa-robot"></i> <span id="aiTitle">الذكاء الاصطناعي</span></h3>
+                        <div class="skill-list">
+                            <span class="skill-item"><i class="fas fa-brain"></i> <span id="aiModelsLabel">نماذج الذكاء الاصطناعي الحديثة</span></span>
+                            <span class="skill-item"><i class="fas fa-paint-brush"></i> <span id="aiArtLabel">الفن بالذكاء الاصطناعي</span></span>
+                            <span class="skill-item"><i class="fab fa-discourse"></i> <span id="aiCommunitiesLabel">متابعة مجتمعات الذكاء الاصطناعي</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2><i class="fas fa-project-diagram"></i> <span id="projectsTitle">المشاريع</span></h2>
+            <div class="projects-grid">
+                <div class="card">
+                    <div class="card-content">
+                        <h3><i class="fas fa-desktop"></i> <span id="project1Title">محلل نظرية الأوتوماتا</span></h3>
+                        <p id="project1Desc">مشروع لتطوير أداة سطح مكتب لتحليل وتصوير آلات الأوتوماتا (DFA, NFA) باستخدام C# وWindows Forms. يهدف إلى تسهيل فهم المفاهيم النظرية المعقدة في علوم الحاسوب من خلال واجهة رسومية بديهية.</p>
+                        <div class="project-tech-icons">
+                            <span class="icon-label"><i class="fab fa-microsoft"></i> C#</span>
+                            <span class="icon-label"><i class="fas fa-window-maximize"></i> Windows Forms</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <h3><i class="fas fa-boxes"></i> <span id="project2Title">نظام إدارة منتجات</span></h3>
+                        <p id="project2Desc">نظام ويب متكامل لإدارة المنتجات، يتضمن وظائف الإضافة والتعديل والحذف والاستعلام. تم بناؤه باستخدام PHP للواجهة الخلفية وMySQL كقاعدة بيانات، مما يضمن كفاءة عالية في التخزين والاسترجاع.</p>
+                        <div class="project-tech-icons">
+                            <span class="icon-label"><i class="fab fa-php"></i> PHP</span>
+                            <span class="icon-label"><i class="fas fa-database"></i> MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <h3><i class="fas fa-clipboard-list"></i> <span id="project3Title">استمارة تسجيل متقدمة</span></h3>
+                        <p id="project3Desc">تطوير استمارة تسجيل ديناميكية وفعالة تسمح للمستخدمين برفع الصور وتعديل بياناتهم الشخصية بسهولة. يعتمد المشروع على PHP للمعالجة من جانب الخادم وjQuery لتحسين التفاعل من جانب العميل.</p>
+                        <div class="project-tech-icons">
+                            <span class="icon-label"><i class="fab fa-php"></i> PHP</span>
+                            <span class="icon-label"><i class="fab fa-js"></i> jQuery</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <h3><i class="fas fa-spell-check"></i> <span id="project4Title">مشروع OCR للغة العربية</span></h3>
+                        <p id="project4Desc">مشروع بحثي مبتكر للتعرف البصري على الحروف (OCR) مخصص للنصوص العربية. تم تطويره باستخدام لغة Python، ويهدف إلى تحويل الصور التي تحتوي على نصوص عربية إلى نص رقمي قابل للتحرير.</p>
+                        <div class="project-tech-icons">
+                            <span class="icon-label"><i class="fab fa-python"></i> Python</span>
+                            <span class="icon-label"><i class="fas fa-magic"></i> OCR Concepts</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <h3><i class="fas fa-gift"></i> <span id="project5Title">موقع تهنئة تفاعلي</span></h3>
+                        <p id="project5Desc">موقع ويب جذاب وتفاعلي تم تصميمه خصيصًا لتهنئة بعيد الأضحى. يستخدم HTML لبناء الهيكل، CSS لإضافة تصميم جمالي ومريح للعين، وJavaScript لإضافة عناصر ديناميكية وتفاعلية تعزز تجربة المستخدم.</p>
+                        <div class="project-tech-icons">
+                            <span class="icon-label"><i class="fab fa-html5"></i> HTML</span>
+                            <span class="icon-label"><i class="fab fa-css3-alt"></i> CSS</span>
+                            <span class="icon-label"><i class="fab fa-js"></i> JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- إضافة مشروع الذكاء الاصطناعي الفني -->
+                <div class="card">
+                    <div class="card-content">
+                        <h3><i class="fas fa-robot"></i> <span id="project6Title">نموذج فني بالذكاء الاصطناعي</span></h3>
+                        <p id="project6Desc">تصميم وتطوير نموذج ذكاء اصطناعي قادر على رسم أشكال وصور فنية مبتكرة باستخدام تقنيات التوليد العميق. المشروع يدمج بين الإبداع البشري والقدرات الحسابية للذكاء الاصطناعي لإنتاج أعمال فنية فريدة.</p>
+                        <div class="project-tech-icons">
+                            <span class="icon-label"><i class="fab fa-python"></i> Python</span>
+                            <span class="icon-label"><i class="fas fa-brain"></i> Deep Learning</span>
+                            <span class="icon-label"><i class="fas fa-paint-brush"></i> Generative Art</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Courses Section -->
+        <section id="courses">
+            <h2><i class="fas fa-chalkboard-teacher"></i> <span id="coursesTitle">الدورات</span></h2>
+            <div class="courses-list">
+                <div class="course-item">
+                    <i class="fas fa-chart-bar"></i> <p id="course1">تحليل البيانات باستخدام Python</p>
+                </div>
+                <div class="course-item">
+                    <i class="fas fa-shield-alt"></i> <p id="course2">مقدمة في الأمن السيبراني</p>
+                </div>
+                <div class="course-item">
+                    <i class="fas fa-palette"></i> <p id="course3">تطوير واجهات المستخدم باستخدام HTML, CSS, JS</p>
+                </div>
+                <div class="course-item">
+                    <i class="fas fa-file-alt"></i> <p id="course4">مشروع OCR وتوليد بيانات نصية</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Interests Section -->
+        <section id="interests">
+            <h2><i class="fas fa-heart"></i> <span id="interestsTitle">الاهتمامات</span></h2>
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <i class="fas fa-search"></i>
+                    <p id="interest1">تحليل النماذج والأنظمة</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <p id="interest2">تطوير تطبيقات ومواقع تفاعلية</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-lock"></i>
+                    <p id="interest3">تعلم الأمن السيبراني وعلوم الحاسوب النظرية</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-users"></i>
+                    <p id="interest4">العمل الجماعي والتطوير المستمر</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fab fa-discourse"></i>
+                    <p id="interest5">متابعة مجتمعات الذكاء الاصطناعي والتقنية</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Personal Skills Section -->
+        <section id="personalSkills">
+            <h2><i class="fas fa-running"></i> <span id="skillsHobbiesTitle">المهارات الشخصية والهوايات</span></h2>
+            <div class="personal-skills-grid">
+                <div class="personal-skill-item">
+                    <i class="fas fa-swimmer"></i>
+                    <p id="skill1">رياضة السباحة</p>
+                </div>
+                <div class="personal-skill-item">
+                    <i class="fas fa-fist-raised"></i>
+                    <p id="skill2">رياضة التايكوندو (حزام أسود)</p>
+                </div>
+                <div class="personal-skill-item">
+                    <i class="fas fa-brain"></i>
+                    <p id="skill3">استخدام نماذج الذكاء الاصطناعي الحديثة</p>
+                </div>
+                <div class="personal-skill-item">
+                    <i class="fas fa-paint-brush"></i>
+                    <p id="skill4">تصميم الفن باستخدام الذكاء الاصطناعي</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p id="copyright">© 2024 عبد العزيز مطيع الفهد. جميع الحقوق محفوظة.</p>
+            <p id="designCredit">تصميم وتطوير بواسطة <a href="https://github.com/abdualziz511" target="_blank">عبد العزيز مطيع الفهد</a>.</p>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" title="العودة للأعلى">
+        <i class="fas fa-arrow-up"></i>
+        <span class="btn-text" id="backToTopText">العودة للأعلى</span>
+    </button>
+    
+    <!-- Language Notification -->
+    <div class="lang-notification" id="langNotification"></div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Language translations
+            const translations = {
+                ar: {
+                    heroTitle: "عبد العزيز مطيع الفهد",
+                    heroSubtitle: "طالب طموح في تخصص تقنية المعلومات، أمتلك شغفًا عميقًا في مجالات الأمن السيبراني، تحليل البيانات، ونظرية الحوسبة. أسعى لتطبيق مهاراتي الأكاديمية والعملية في بيئة عمل احترافية، والمساهمة في تطوير حلول تقنية فعالة وآمنة تترك أثرًا إيجابيًا.",
+                    aboutTitle: "عني",
+                    personalInfoTitle: "معلومات شخصية",
+                    fullNameLabel: "الاسم الكامل:",
+                    fullNameValue: "عبد العزيز مطيع ناجي مصلح الفهد",
+                    nationalityLabel: "الجنسية:",
+                    nationalityValue: "يمني",
+                    locationLabel: "محل الإقامة:",
+                    locationValue: "إب، اليمن",
+                    phoneLabel: "رقم الهاتف:",
+                    phoneValue: "+967 775 659 026",
+                    emailLabel: "البريد الإلكتروني:",
+                    emailValue: "alfhdbdalzyz417@gmail.com",
+                    telegramLabel: "التلجرام:",
+                    telegramValue: "@Aziz_11_13",
+                    facebookLabel: "الفيسبوك:",
+                    facebookValue: "عبد العزيز الفهد",
+                    whatsappLabel: "الواتساب:",
+                    whatsappValue: "+967 775 659 026",
+                    languagesLabel: "اللغة:",
+                    languagesValue: "العربية (اللغة الأم)، الإنجليزية (جيد جداً)",
+                    objectiveTitle: "الهدف المهني",
+                    objectiveText: "طالب في تخصص تقنية المعلومات أسعى لتطبيق مهاراتي الأكاديمية والعملية في بيئة عمل احترافية، أمتلك شغفًا في مجالات أمن المعلومات، تحليل البيانات، ونظرية الحوسبة، وأسعى للمساهمة في تطوير حلول تقنية فعالة وآمنة.",
+                    educationTitle: "المؤهل العلمي",
+                    degreeTitle: "بكالوريوس تقنية معلومات",
+                    universityLabel: "الجامعة:",
+                    universityValue: "جامعة إب – إب",
+                    graduationLabel: "متوقع التخرج:",
+                    graduationValue: "2025",
+                    educationDescription: "أركز خلال دراستي على مفاهيم أساسية في علوم الحاسوب وهندسة البرمجيات، مع اهتمام خاص بتطبيقاتها العملية وحلولها المبتكرة في مجال الأمن السيبراني وتحليل البيانات.",
+                    skillsTitle: "المهارات التقنية",
+                    programmingTitle: "لغات البرمجة",
+                    databaseTitle: "قواعد البيانات",
+                    analysisTitle: "أدوات التحليل",
+                    toolsTitle: "أدوات التطوير",
+                    conceptsTitle: "مفاهيم",
+                    cybersecurityLabel: "الأمن السيبراني",
+                    machinesLabel: "نظرية الآلات",
+                    dataAnalysisLabel: "تحليل البيانات",
+                    algorithmsLabel: "الخوارزميات",
+                    projectsTitle: "المشاريع",
+                    project1Title: "محلل نظرية الأوتوماتا",
+                    project1Desc: "مشروع لتطوير أداة سطح مكتب لتحليل وتصوير آلات الأوتوماتا (DFA, NFA) باستخدام C# وWindows Forms. يهدف إلى تسهيل فهم المفاهيم النظرية المعقدة في علوم الحاسوب من خلال واجهة رسومية بديهية.",
+                    project2Title: "نظام إدارة منتجات",
+                    project2Desc: "نظام ويب متكامل لإدارة المنتجات، يتضمن وظائف الإضافة والتعديل والحذف والاستعلام. تم بناؤه باستخدام PHP للواجهة الخلفية وMySQL كقاعدة بيانات، مما يضمن كفاءة عالية في التخزين والاسترجاع.",
+                    project3Title: "استمارة تسجيل متقدمة",
+                    project3Desc: "تطوير استمارة تسجيل ديناميكية وفعالة تسمح للمستخدمين برفع الصور وتعديل بياناتهم الشخصية بسهولة. يعتمد المشروع على PHP للمعالجة من جانب الخادم وjQuery لتحسين التفاعل من جانب العميل.",
+                    project4Title: "مشروع OCR للغة العربية",
+                    project4Desc: "مشروع بحثي مبتكر للتعرف البصري على الحروف (OCR) مخصص للنصوص العربية. تم تطويره باستخدام لغة Python، ويهدف إلى تحويل الصور التي تحتوي على نصوص عربية إلى نص رقمي قابل للتحرير.",
+                    project5Title: "موقع تهنئة تفاعلي",
+                    project5Desc: "موقع ويب جذاب وتفاعلي تم تصميمه خصيصًا لتهنئة بعيد الأضحى. يستخدم HTML لبناء الهيكل، CSS لإضافة تصميم جمالي ومريح للعين، وJavaScript لإضافة عناصر ديناميكية وتفاعلية تعزز تجربة المستخدم.",
+                    coursesTitle: "الدورات",
+                    course1: "تحليل البيانات باستخدام Python",
+                    course2: "مقدمة في الأمن السيبراني",
+                    course3: "تطوير واجهات المستخدم باستخدام HTML, CSS, JS",
+                    course4: "مشروع OCR وتوليد بيانات نصية",
+                    interestsTitle: "الاهتمامات",
+                    interest1: "تحليل النماذج والأنظمة",
+                    interest2: "تطوير تطبيقات ومواقع تفاعلية",
+                    interest3: "تعلم الأمن السيبراني وعلوم الحاسوب النظرية",
+                    interest4: "العمل الجماعي والتطوير المستمر",
+                    copyright: "© 2024 عبد العزيز مطيع الفهد. جميع الحقوق محفوظة.",
+                    designCredit: "تصميم وتطوير بواسطة <a href='https://github.com/abdualziz511' target='_blank'>عبد العزيز مطيع الفهد</a>.",
+                    backToTopText: "العودة للأعلى",
+                    languageText: "English",
+                    diplomaTitle: "دبلوم متوسط في اللغة الإنجليزية",
+                    instituteLabel: "المعهد:",
+                    instituteValue: "معهد البرد العربي – إب",
+                    diplomaDescription: "حاصل على دبلوم متوسط في اللغة الإنجليزية يثبت كفاءتي في اللغة ومهارات التواصل بالإنجليزية في المجالات الأكاديمية والمهنية.",
+                    aiTitle: "الذكاء الاصطناعي",
+                    aiModelsLabel: "نماذج الذكاء الاصطناعي الحديثة",
+                    aiArtLabel: "الفن بالذكاء الاصطناعي",
+                    aiCommunitiesLabel: "متابعة مجتمعات الذكاء الاصطناعي",
+                    project6Title: "نموذج فني بالذكاء الاصطناعي",
+                    project6Desc: "تصميم وتطوير نموذج ذكاء اصطناعي قادر على رسم أشكال وصور فنية مبتكرة باستخدام تقنيات التوليد العميق. المشروع يدمج بين الإبداع البشري والقدرات الحسابية للذكاء الاصطناعي لإنتاج أعمال فنية فريدة.",
+                    interest5: "متابعة مجتمعات الذكاء الاصطناعي والتقنية",
+                    skillsHobbiesTitle: "المهارات الشخصية والهوايات",
+                    skill1: "رياضة السباحة",
+                    skill2: "رياضة التايكوندو (حزام أسود)",
+                    skill3: "استخدام نماذج الذكاء الاصطناعي الحديثة",
+                    skill4: "تصميم الفن باستخدام الذكاء الاصطناعي"
+                },
+                en: {
+                    heroTitle: "Abdulaziz Muti Al-Fahd",
+                    heroSubtitle: "Ambitious IT student specializing in cybersecurity, data analysis, and computing theory. Seeking to apply academic and practical skills in a professional environment to contribute to developing effective and secure technological solutions.",
+                    aboutTitle: "About Me",
+                    personalInfoTitle: "Personal Information",
+                    fullNameLabel: "Full Name:",
+                    fullNameValue: "Abdulaziz Muti Naji Musleh Al-Fahd",
+                    nationalityLabel: "Nationality:",
+                    nationalityValue: "Yemeni",
+                    locationLabel: "Location:",
+                    locationValue: "Ibb, Yemen",
+                    phoneLabel: "Phone:",
+                    phoneValue: "+967 775 659 026",
+                    emailLabel: "Email:",
+                    emailValue: "alfhdbdalzyz417@gmail.com",
+                    telegramLabel: "Telegram:",
+                    telegramValue: "@Aziz_11_13",
+                    facebookLabel: "Facebook:",
+                    facebookValue: "Abdulaziz Al-Fahd",
+                    whatsappLabel: "WhatsApp:",
+                    whatsappValue: "+967 775 659 026",
+                    languagesLabel: "Languages:",
+                    languagesValue: "Arabic (Native), English (Very Good)",
+                    objectiveTitle: "Career Objective",
+                    objectiveText: "An IT student seeking to apply academic and practical skills in a professional environment. Passionate about information security, data analysis, and computing theory, aiming to contribute to developing effective and secure technological solutions.",
+                    educationTitle: "Education",
+                    degreeTitle: "Bachelor of Information Technology",
+                    universityLabel: "University:",
+                    universityValue: "Ibb University - Ibb",
+                    graduationLabel: "Expected Graduation:",
+                    graduationValue: "2025",
+                    educationDescription: "During my studies, I focus on fundamental concepts in computer science and software engineering, with special interest in their practical applications and innovative solutions in cybersecurity and data analysis.",
+                    skillsTitle: "Technical Skills",
+                    programmingTitle: "Programming Languages",
+                    databaseTitle: "Databases",
+                    analysisTitle: "Analysis Tools",
+                    toolsTitle: "Development Tools",
+                    conceptsTitle: "Concepts",
+                    cybersecurityLabel: "Cybersecurity",
+                    machinesLabel: "Automata Theory",
+                    dataAnalysisLabel: "Data Analysis",
+                    algorithmsLabel: "Algorithms",
+                    projectsTitle: "Projects",
+                    project1Title: "Automata Theory Analyzer",
+                    project1Desc: "A desktop tool for analyzing and visualizing automata machines (DFA, NFA) using C# and Windows Forms. Designed to simplify understanding complex theoretical concepts in computer science through an intuitive graphical interface.",
+                    project2Title: "Product Management System",
+                    project2Desc: "A comprehensive web-based product management system with CRUD functionality. Built with PHP backend and MySQL database ensuring efficient storage and retrieval.",
+                    project3Title: "Advanced Registration Form",
+                    project3Desc: "A dynamic registration form allowing users to upload photos and edit personal information easily. Utilizes PHP for server-side processing and jQuery for enhanced client-side interaction.",
+                    project4Title: "Arabic OCR Project",
+                    project4Desc: "An innovative research project for Optical Character Recognition (OCR) specialized for Arabic texts. Developed using Python to convert images containing Arabic text into editable digital text.",
+                    project5Title: "Interactive Greeting Website",
+                    project5Desc: "An engaging and interactive website designed for Eid Al-Adha greetings. Uses HTML for structure, CSS for aesthetic and comfortable design, and JavaScript for dynamic interactive elements enhancing user experience.",
+                    coursesTitle: "Courses",
+                    course1: "Data Analysis with Python",
+                    course2: "Introduction to Cybersecurity",
+                    course3: "UI Development with HTML, CSS, JS",
+                    course4: "OCR Project and Text Data Generation",
+                    interestsTitle: "Interests",
+                    interest1: "Analyzing Models and Systems",
+                    interest2: "Developing Interactive Applications and Websites",
+                    interest3: "Learning Cybersecurity and Theoretical Computer Science",
+                    interest4: "Teamwork and Continuous Development",
+                    copyright: "© 2024 Abdulaziz Muti Al-Fahd. All Rights Reserved.",
+                    designCredit: "Designed and developed by <a href='https://github.com/abdualziz511' target='_blank'>Abdulaziz Muti Al-Fahd</a>.",
+                    backToTopText: "Back to Top",
+                    languageText: "العربية",
+                    diplomaTitle: "Intermediate Diploma in English Language",
+                    instituteLabel: "Institute:",
+                    instituteValue: "Al-Bard Al-Arabi Institute - Ibb",
+                    diplomaDescription: "Holder of an intermediate diploma in English language, proving proficiency in English and communication skills in academic and professional fields.",
+                    aiTitle: "Artificial Intelligence",
+                    aiModelsLabel: "Modern AI Models",
+                    aiArtLabel: "AI Art",
+                    aiCommunitiesLabel: "Following AI Communities",
+                    project6Title: "AI Art Generation Model",
+                    project6Desc: "Designing and developing an artificial intelligence model capable of drawing innovative shapes and artistic images using deep generative techniques. The project combines human creativity with the computational capabilities of AI to produce unique artworks.",
+                    interest5: "Following AI and Technology Communities",
+                    skillsHobbiesTitle: "Personal Skills & Hobbies",
+                    skill1: "Swimming",
+                    skill2: "Taekwondo (Black Belt)",
+                    skill3: "Using Modern AI Models",
+                    skill4: "Designing Art with AI"
+                }
+            };
+            
+            // Get current language from localStorage or default to Arabic
+            let currentLang = localStorage.getItem('lang') || 'ar';
+            
+            // Apply translations
+            function applyTranslations(lang) {
+                const trans = translations[lang];
+                
+                for (const key in trans) {
+                    const element = document.getElementById(key);
+                    if (element) {
+                        if (key === 'designCredit' || key === 'objectiveText') {
+                            element.innerHTML = trans[key];
+                        } else {
+                            element.textContent = trans[key];
+                        }
+                    }
+                }
+                
+                // Update language button text
+                document.getElementById('languageText').textContent = lang === 'ar' ? 'English' : 'العربية';
+                
+                // Update direction
+                document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
+                
+                // Update notification
+                const notification = lang === 'ar' ? 
+                    'تم التبديل إلى اللغة العربية' : 
+                    'Switched to English';
+                document.getElementById('langNotification').textContent = notification;
+            }
+            
+            // Initialize with current language
+            applyTranslations(currentLang);
+            
+            // Language toggle button
+            document.getElementById('languageToggle').addEventListener('click', function() {
+                currentLang = currentLang === 'ar' ? 'en' : 'ar';
+                localStorage.setItem('lang', currentLang);
+                applyTranslations(currentLang);
+                
+                // Show notification
+                const notification = document.getElementById('langNotification');
+                notification.style.display = 'block';
+                setTimeout(() => {
+                    notification.style.display = 'none';
+                }, 2000);
+            });
+            
+            // Scroll reveal effect
+            function checkScrollReveal() {
+                const windowTop = window.scrollY;
+                const windowHeight = window.innerHeight;
+                
+                document.querySelectorAll('section').forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+                    const revealPoint = sectionTop - (windowHeight * 0.8);
+                    
+                    if (windowTop > revealPoint) {
+                        section.classList.add('is-visible');
+                    } else if (windowTop < sectionTop - windowHeight) {
+                        section.classList.remove('is-visible');
+                    }
+                });
+            }
+            
+            checkScrollReveal();
+            
+            window.addEventListener('scroll', function() {
+                checkScrollReveal();
+                
+                // Back to top button
+                if (window.scrollY > 300) {
+                    document.getElementById('backToTopBtn').style.display = 'flex';
+                } else {
+                    document.getElementById('backToTopBtn').style.display = 'none';
+                }
+            });
+            
+            // Back to top button
+            document.getElementById('backToTopBtn').addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Skill item animation
+            document.querySelectorAll('.skill-item').forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.classList.add('animated');
+                });
+                item.addEventListener('mouseleave', function() {
+                    this.classList.remove('animated');
+                });
+            });
+            
+            // Card hover effect
+            document.querySelectorAll('.card').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.classList.add('card-hover');
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.classList.remove('card-hover');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
